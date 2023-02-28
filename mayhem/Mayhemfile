@@ -1,0 +1,9 @@
+project: markovify
+target: fuzz-txt
+testsuite:
+    - file://mayhem/testsuite
+duration: 600
+cmds:
+  - cmd: /src/mayhem/fuzz_txt.py
+    libfuzzer: true
+    timeout: 8
